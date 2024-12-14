@@ -1,13 +1,49 @@
 body {
     display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #222;
+    background-color: #50964a;
+}
+
+.health-bar-container { 
+    display: flex; 
+    justify-content: space-between; 
+    width: 45em; 
+    padding: 20px; 
+    background-color: #285032; 
+    color: white; 
+    box-sizing: border-box; 
+    border-radius: 2em 2em 0 0;
+} 
+
+.hidden { 
+    display: none;
+} 
+
+.health-bar {
+    font-size: 1.2rem; 
+    font-weight: bold; 
 }
 
 canvas {
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #00360e;
+    border: 2px solid #003f05;
+    border-radius: 3em;
+}
+
+button {
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: #338156;
+    background-color: #76be75;
+    height: 2em;
+    width: 8em;
+    border-radius: 3em;
+    border: 10px #cc1f67;
+    font-size: 3em;
+    box-shadow: 0 5px 10px #0e4e0c;
 }
